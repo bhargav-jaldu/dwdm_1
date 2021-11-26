@@ -4,8 +4,8 @@
             alert("Enter number of positives and negatives: ");
             let x= prompt("Positives: ")
             let y= prompt("negatives: ")
-            arr.push(x);
-            arr.push(y);
+            arr.push(parseInt(x));
+            arr.push(parseInt(y));
         }
 
         // ArrayList<Double> entropy = new ArrayList<>();
@@ -18,6 +18,7 @@
             let a=arr[i+1]/u;
             let e=(-y*(Math.log(y) / Math.log(2))-a*(Math.log(a) / Math.log(2)));
             //System.out.println("e"+);
+            console.log(u)
             entropy.push(e);
 
         }
@@ -27,6 +28,7 @@
         for (let i = 0; i < entropy.length; i++) {
             // System.out.println(entropy[i) + " ");
             document.write(entropy[i] + " ");
+            document.write("<br>");
         }
 
         // ArrayList<Double> ie1 = new ArrayList<>();
